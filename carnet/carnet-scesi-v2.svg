@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.51"
-     inkscape:cx="499.02902"
-     inkscape:cy="435.96648"
+     inkscape:zoom="2.3603306"
+     inkscape:cx="265.51394"
+     inkscape:cy="640.19608"
      inkscape:current-layer="layer1"
      id="namedview3009"
      showgrid="false"
@@ -81,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -90,7 +90,10 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <g
-       id="g41167">
+       id="g41167"
+       inkscape:export-filename="/home/zim/document/scesi-docs/carnet/carnet-scesi-v2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          transform="matrix(0,1,-1,0,0,0)"
          ry="9.7087383"
