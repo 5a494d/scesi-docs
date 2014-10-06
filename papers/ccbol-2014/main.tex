@@ -1,9 +1,10 @@
 \documentclass[11pt,twocolumn]{article} 
 
 \usepackage[spanish]{babel}
-\usepackage{hyperref}
+\usepackage{url, hyperref}
 \usepackage{tabularx}
-
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png}
 \title{
 \vspace{-3cm}   
 Control y seguimiento de actividades en base a roles de acceso para la identificaci\'on personal \\ 
@@ -50,11 +51,33 @@ La  informaci\'on  que proporcionaran estos dispositivos de acceso puede llegar 
 
 Para asegurar la confidencialidad y privacidad, de ambientes que requieran un control de acceso limitando a un grupo de personas, se llega a la conclusi\'on: Que esta personas  requieren de permisos especiales, en este caso roles de acceso, para ingresar o realizar actividades que est\'en limitadas por un dispositivo de control. \\
 
-En instituciones educativas, el seguimiento se traduce en informaci\'on vital sobre: desempe\~{n}no acad\'emico, asistencia, registro de actividad academica de los estudiantes. En eventos sociales, la asistencia de los participantes y  permisos de entradas a areas mas especiales. En Hogares, los dispositivos se convierten en modernos sistemas de seguridad integradas a una llave digital.\\
 
 \section{RFID}
 
+RFID, Radio Frequency Identification permite transmitir la identidad de un objeto a una frecuencia con que se comunica con un dispositivo que reconoce al objeto. Este comportamiento esta basado en el modelo emisor receptor. \\
 
+
+\begin{figure}[t]
+  \begin{center}
+    \includegraphics[width=2in]{mifare.png}
+  \end{center}
+
+  \caption{\small Dise\~no interno de Mifare S50.}
+  \label{fig-label}
+\end{figure}
+
+\section{Mifare S50}
+
+La tarjeta plástica PVC laminada tamaño ISO estándar: 85,7 x 54 x 0,82 mm, 6gr. aprox, trabaja a una frecuencia: 13,56 MHz integrado a un Chip Mifare de lectura y escritura la velocidad de transferencia para la lectura y escritura esta establecida a unos 106 Kbits/s. Esta tarjetas como sus predecesoras viene  con 1Kbytes de memoria EEPROM, de los cuales estan disponibles en 16 sectores y asignados con un numero de serie unico de 4 bytes\\
+\\
+La distancia maxima para realizar una lectura o escritura es de 10 cm, los datos pueden permanecer almacenados por al menos 10 a\~nos. \\
+\\
+Tal como se muestra en la Figura 1. El esquema de la tarjeta esta dividido en dos partes:\\
+
+\begin{itemize}
+	\item Antena de a cobre
+	\item Chip Mifare.
+\end{itemize}
 
 \section{Aporte}
 
@@ -62,7 +85,7 @@ La implementaci\'on de hardware libres como Arduino impulsara la adopci\'on de l
 
 \section{Modelo de trabajo}  
 
-El m\'etodo de desarrollo comprende tres \'areas espec\'ificas que dar\'an como resultado las diferentes versiones tanto del software como de los componentes el\'ectricos  que intervienen.
+El m\'etodo de desarrollo comprende tres \'areas espec\'ificas que dar\'an como resultado las diferentes versiones tanto del software como de los componentes el\'ectricos  que intervienen, para elaborara un modelo de implementacion Figura 2. en un ambiente de trabajo.\\
 
 
 	\subsection{ Sistema web }
@@ -89,6 +112,14 @@ El m\'etodo de desarrollo comprende tres \'areas espec\'ificas que dar\'an como 
 		 \item[Interaccion con usuario] Estado de verificaci\'on mediante componentes electr\'onicos. 		
 	 \end{description}			
 
+\begin{figure}[!h]
+  \begin{center}
+    \includegraphics[width=2in]{architect.png}
+  \end{center}
+
+  \caption{\small Modelo de implementacion para otros dispositivos de identificacion.}
+  \label{fig-label}
+\end{figure}
 
 \section{Desarrollo}
 

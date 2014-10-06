@@ -14,9 +14,17 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="rfid - schemas.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3992" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,15 +32,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.9873603"
-     inkscape:cx="148.28663"
-     inkscape:cy="906.38707"
+     inkscape:zoom="0.85"
+     inkscape:cx="467.43573"
+     inkscape:cy="907.60252"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="954"
+     inkscape:window-width="681"
      inkscape:window-height="751"
-     inkscape:window-x="409"
+     inkscape:window-x="0"
      inkscape:window-y="15"
      inkscape:window-maximized="0" />
   <metadata
@@ -123,5 +131,215 @@
            id="tspan3823"
            sodipodi:role="line">MIFARE S50</tspan></text>
     </g>
+    <g
+       id="g3856"
+       transform="translate(-120.37411,59.432341)"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         ry="5.9282355"
+         y="10.531124"
+         x="336.40723"
+         height="135.16367"
+         width="72.309738"
+         id="rect3002"
+         style="fill:#969b88;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <rect
+         ry="2.5149372"
+         y="52.946644"
+         x="344.09793"
+         height="38.426617"
+         width="56.928322"
+         id="rect3000"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <rect
+         ry="2.5149372"
+         y="100.73441"
+         x="344.09793"
+         height="38.426617"
+         width="56.928322"
+         id="rect3000-3"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3815"
+         y="68.812454"
+         x="372.04208"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica Medium Condensed"
+         xml:space="preserve"><tspan
+           y="68.812454"
+           x="373.66708"
+           id="tspan3817"
+           sodipodi:role="line">Base de </tspan><tspan
+           id="tspan3826"
+           y="85.062454"
+           x="372.04208"
+           sodipodi:role="line">datos</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3819"
+         y="116.69772"
+         x="372.23059"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Sans Bold"
+         xml:space="preserve"><tspan
+           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Medium Condensed"
+           y="116.69772"
+           x="373.85559"
+           id="tspan3821"
+           sodipodi:role="line">Servidor </tspan><tspan
+           style="font-size:13px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Medium Condensed"
+           id="tspan3824"
+           y="132.94772"
+           x="372.23059"
+           sodipodi:role="line">Web</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3815-6"
+         y="26.198494"
+         x="372.89758"
+         style="font-size:11px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Helvetica Medium Condensed"
+         xml:space="preserve"><tspan
+           id="tspan3826-6"
+           y="26.198494"
+           x="372.89758"
+           sodipodi:role="line">Servicio</tspan><tspan
+           id="tspan3854"
+           y="39.948494"
+           x="372.89758"
+           sodipodi:role="line">Autentificacion</tspan></text>
+    </g>
+    <rect
+       style="fill:#0a0000;fill-opacity:0.70711299;fill-rule:nonzero;stroke:#000000;stroke-width:0.75301373;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3872"
+       width="105.9091"
+       height="68.6978"
+       x="386.28598"
+       y="104.47092"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Sans Bold"
+       x="438.4733"
+       y="126.56471"
+       id="text3874"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3876"
+         x="440.0983"
+         y="126.56471"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed">RFID </tspan><tspan
+         sodipodi:role="line"
+         x="438.4733"
+         y="142.81471"
+         id="tspan3878"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed">13.56 Mhz</tspan><tspan
+         sodipodi:role="line"
+         x="438.4733"
+         y="159.06471"
+         id="tspan3880"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed">12.5 Khz</tspan></text>
+    <rect
+       style="fill:#0a0000;fill-opacity:0.70711299;fill-rule:nonzero;stroke:#000000;stroke-width:0.75301373;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3872-5"
+       width="105.9091"
+       height="68.6978"
+       x="386.28595"
+       y="186.36771"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Sans Bold"
+       x="438.47327"
+       y="208.4615"
+       id="text3874-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="438.47327"
+         y="208.4615"
+         id="tspan3880-4"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed">RFID</tspan><tspan
+         sodipodi:role="line"
+         x="438.47327"
+         y="224.71149"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed"
+         id="tspan3916">800 Mhz</tspan><tspan
+         sodipodi:role="line"
+         x="438.47327"
+         y="240.96149"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed"
+         id="tspan3918">900 Mhz</tspan><tspan
+         sodipodi:role="line"
+         x="438.47327"
+         y="257.21149"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed"
+         id="tspan3920" /></text>
+    <rect
+       style="fill:#0a0000;fill-opacity:0.70711299;fill-rule:nonzero;stroke:#000000;stroke-width:0.75301373;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3872-2"
+       width="105.9091"
+       height="68.6978"
+       x="386.28595"
+       y="21.810751"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Helvetica;-inkscape-font-specification:Sans Bold"
+       x="438.47327"
+       y="51.904545"
+       id="text3874-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         x="438.47327"
+         y="51.904545"
+         id="tspan3880-8"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed">NFC</tspan><tspan
+         sodipodi:role="line"
+         x="438.47327"
+         y="68.154541"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Helvetica;-inkscape-font-specification:Helvetica Bold Condensed"
+         id="tspan3990">13.56 Mhz</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53283221px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 312.78218,88.991972 c 10.16134,-11.362831 10.06219,-11.541556 10.06219,-11.541556 l 1.22195,2.944851 35.25287,-19.555322 2.82555,5.093687 -35.56763,19.729921 1.4698,3.391672 z"
+       id="path4012"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53283221px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 312.56,132.11606 c 14.36868,-5.08997 14.3675,-5.29435 14.3675,-5.29435 l -0.34174,3.16994 40.3128,-0.23152 0.0335,5.8248 -40.67273,0.23358 -0.33881,3.68089 z"
+       id="path4012-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.53283221px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 311.43912,192.05858 c 14.91588,3.14377 15.02137,2.96872 15.02137,2.96872 l -1.94361,2.52739 34.52672,20.81059 -3.00691,4.98876 -34.835,-20.9964 -2.20739,2.965 z"
+       id="path4012-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/zim/document/scesi-docs/papers/img/architect.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
