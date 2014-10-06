@@ -1,0 +1,20 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\'on}{3}{section.1}
+\contentsline {section}{\numberline {2}Antecedentes}{3}{section.2}
+\contentsline {section}{\numberline {3}Justificaci\'on}{3}{section.3}
+\contentsline {section}{\numberline {4}Planteamiento del problema}{4}{section.4}
+\contentsline {section}{\numberline {5}Objetivos}{4}{section.5}
+\contentsline {subsection}{\numberline {5.1}Objetivo general}{4}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Objetivos Espec\'ificos}{4}{subsection.5.2}
+\contentsline {section}{\numberline {6}Hipotesis}{5}{section.6}
+\contentsline {section}{\numberline {7}Novedad y aporte cient\'ifico}{5}{section.7}
+\contentsline {section}{\numberline {8}Dise\~{n}o metodol\'ogico y te\'orico}{5}{section.8}
+\contentsline {subsection}{\numberline {8.1} Sistema web }{5}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Aplicaci\'on m\'ovil}{5}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Dispositivo electr\'onico}{6}{subsection.8.3}
+\contentsline {section}{\numberline {9}Desarrollo del proyecto}{6}{section.9}
+\contentsline {subsection}{\numberline {9.1}Componentes electr\'onicos}{6}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Versionado de prototipos}{7}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Herramientas de desarrollo}{7}{subsection.9.3}
+\contentsline {section}{\numberline {10}Conclusiones y recomendaciones}{8}{section.10}
+\contentsline {section}{\numberline {11}Bibliograf\'ia}{9}{section.11}

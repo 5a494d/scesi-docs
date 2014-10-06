@@ -1,0 +1,147 @@
+\documentclass[11pt,twocolumn]{article} 
+
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+\title{
+\vspace{-3cm}   
+Control y seguimiento de actividades en base a roles de acceso para la identificaci\'on personal \\ 
+Centinela
+}
+
+\author{ 
+Jorge Lipa Challapa\\
+Vladimir Cespedes Lopez\\
+Edgar Valencia \\
+Ronald Heredia\\
+Erick Pe\~na  \\
+\\
+Universidad Mayor de San Sim\'on \\
+Facultad de Ciencia y Tecnolog\'ia \\
+Sociedad Cientifica de Estudiantes de Sistemas Inform\'atica\\
+\url {http://www.scesi.org/}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract} 
+\textit{Centinela} , esta destinado ofrece control de acceso sobre un grupo determinado de personas y ofrecer datos estadísticos referentes a las entradas y salidas del personal que a su vez se interpretara como informaci\'on muy valiosa al momento de realizar seguimiento, frecuencia de accesos controlando los permisos de acceso al ambiente.  Pudiendo ser utilizado en diferentes \'areas de la industria donde se tenga que otorgar identificaciones \'unicas a un personal autorizado\\
+\end{abstract}
+
+\begin{abstract} 
+\textit{Centinela} , is destined provides access control over a particular group of people and provide statistical data related to the inputs and outputs of staff who in turn were interpreted as very valuable information at the time of monitoring, frequency of access permissions controlling access to the environment .Can be used in different areas of the industry where they have to give unique IDs to authorized personnel
+\end{abstract}
+
+
+\section{Introducci\'on}
+Uno de los problemas de seguridad mas frecuentes en estos tiempos, a sido el control de acceso a ambientes que requieren de una identificaci\'on o credencial. Ya sea por la cantidad de usuarios o tama\~n del ambiente. Las diferentes soluciones existentes llegan a tener dificultades, ya sea por tiempo, costo, personal encargado donde la implementaci\'on llega a ser laboriosa y compleja para los encargados. \\
+
+El proyecto \textit{Centinela}, como sistema de control de acceso, permitir\'a el manejo ,control de personal y seguimiento de actividades a todo usuario que necesite una verificaci\'on de identidad utilizando tecnolog\'ias como \textit{Android, Arduino y Servicios web} estos permitir\'an elaborar instrumentos de control de acceso para el personal de una manera r\'apida y simple a un costo reducido. \\
+
+\section{Antecedentes}
+
+Generalmente se ve muy a menudo que todos los ambientes  con un nivel de acceso tengan una seguridad de acuerdo a un est\'andar ya establecido, para dar cierta privacidad y confidencialidad, esto puede variar ya que los dispositivos de acceso pueden o no hacer un seguimiento de las actividades sobre el personal. Esto deja al descubierto agujeros de seguridad en el ambiente que mas tarde se interpretara como debilidades y falencias de la instituci\'on.\\
+
+La  informaci\'on  que proporcionaran estos dispositivos de acceso puede llegar a ser muy \'utiles, haciendo un seguimiento de las actividades del individuo o de un grupo de personas, de tal forma  que se tome decisiones con respecto a la informaci\'on obtenida.
+ 
+
+Para asegurar la confidencialidad y privacidad, de ambientes que requieran un control de acceso limitando a un grupo de personas, se llega a la conclusi\'on: Que esta personas  requieren de permisos especiales, en este caso roles de acceso, para ingresar o realizar actividades que est\'en limitadas por un dispositivo de control. \\
+
+En instituciones educativas, el seguimiento se traduce en informaci\'on vital sobre: desempe\~{n}no acad\'emico, asistencia, registro de actividad academica de los estudiantes. En eventos sociales, la asistencia de los participantes y  permisos de entradas a areas mas especiales. En Hogares, los dispositivos se convierten en modernos sistemas de seguridad integradas a una llave digital.\\
+
+\section{RFID}
+
+
+
+\section{Aporte}
+
+La implementaci\'on de hardware libres como Arduino impulsara la adopci\'on de los dispositivos electr\'onicos en otras \'areas gracias a la gran variedad de m\'odulos que cuenta y tambi\'en tecnolog\'ias como los servicios web que descentralizaran la informaci\'on y el monitoreo en tiempo real,permitiendo a diferentes dispositivos tener informaci\'on de manera inmediata mediante   celulares, tablets, paginas web.
+
+\section{Modelo de trabajo}  
+
+El m\'etodo de desarrollo comprende tres \'areas espec\'ificas que dar\'an como resultado las diferentes versiones tanto del software como de los componentes el\'ectricos  que intervienen.
+
+
+	\subsection{ Sistema web }
+	
+	\begin{description}
+		\item [Registro basado en roles] Gesti\'on de los usuarios como el administrador, seguridad y personal com\'un.
+		\item [Dispositivos de control] Gesti\'on de los dispositivos de control.
+		\item [Seguimiento] Seguimiento de las actividades referentes a las credenciales de autentificaci\'on.
+		\item [Reportes de seguimiento] An\'alisis de datos referentes a las actividades de los usuarios autentificados.
+	\end{description}
+	
+	\subsection{Aplicaci\'on m\'ovil}		
+	
+	 \begin{description}
+		 \item[Seguimiento de actividad] Seguimiento de procesos de identificaci\'on a los dispositivos de control.
+		 \item[Reporte personal] Reporte de seguimiento de actividad personal.
+	 \end{description}
+	
+	\subsection{Dispositivo electr\'onico}
+	
+	 \begin{description}
+		 \item[Comunicaci\'on con sistema web] Interfaz de acceso al sistema web mediante una conexi\'on Ethernet.
+		 \item[Verificaci\'on de identidad] Control de acceso mediante RFID.
+		 \item[Interaccion con usuario] Estado de verificaci\'on mediante componentes electr\'onicos. 		
+	 \end{description}			
+
+
+\section{Desarrollo}
+
+Para la realizaci\'on del proyecto \textit{Centinela}, se a clasificado las herramientas que servir\'an para la culminaci\'on del prototipo inicial, establecidos en las secciones: Componentes electr\'onicos, Herramientas de prueba, Herramientas de desarrollo.
+
+	\subsection{Componentes electr\'onicos}
+
+	Los  dispositivos electr\'onicos que se mencionaran estan limitados en base al prototipo que se pretende realizar:\\
+	
+	\begin{enumerate}
+		\item Arduino Uno
+		\item Tarjeta RFID Mifare S50
+		\item Lector RFID RS232 13.56 Mhz
+		\item Modulo de red (arduino) ENC28J60
+		\item Modulo SD Card (arduino)
+	\end{enumerate}
+	
+	\subsection{Versionado de prototipos}
+
+	Para establecer la funcionalidad del sistema se requiere equipos que soportes las tecnolog\'ias de desarrollo, para esto se ha determinado los componente a continuaci\'on: \\
+	
+	\begin{enumerate}
+		\item Raspberry Pi Modelo B 
+		\item Router inalambrico y red
+		\item Cableado de red 
+		\item Tableta o m\'ovil para el acceso al sistema
+	\end{enumerate}
+	
+	\subsection{Herramientas de desarrollo}
+	
+	Esta secci\'on detalla el software que se utilizara para el desarrollo en todos los ambientes de trabajo del proyecto Centinela ,detallando su descripci\'on con la versi\'on y su desempe\~no segun :
+	
+	\begin{enumerate}
+		\item Apache v2.2
+		\item PHP v5.4
+		\item PostgreSQL v9.3
+		\item Laravel Framework v4.2
+		\item Android v4.0.4
+		\item Arduino IDE v1.0.5
+	\end{enumerate}
+
+\section{Conclusiones y recomendaciones}
+	Como se pudo apreciar con esta combinaci\'on de tecnolog\'ias y se puede decir que la adopci\'on de RFID de la mano de Arduino es muy aceptable seg\'un nuestra experiencia ya que los  aspectos t\'ecnicos ya quedan relevados a los m\'odulos que disponen dejando la programaci\'on de estos a nuestro criterio donde se puede apreciar el conocimiento que se obtuvo ya que esta nos compete al ser la rama troncal de nuestra facultad. \\
+	
+	Aclarar que este tipo de sistema esta dispuesto de forma general y planeado para ser implementado primeramente en ambientes donde requieran identificaci\'on como en conferencia, seminarios, laboratorios. La disponibilidad de los dispositivos hace que su implementaci\'on llegue a una escala aun mayor a las ya mencionadas.
+\section{Bibliograf\'ia}
+	
+	\begin{itemize}
+		\item  Tedjasaputra, Adi (18 de diciembre 2006). «RFID Tag Attachments». RFID Asia. Consultado el 3 de agosto 2007.
+		\item Dargan, Gaurav; Johnson,Brian; Panchalingam, Mukunthan; Stratis, Chris (2004), The Use of Radio Frequency Identification as a Replacement for Traditional Barcoding
+		
+		\item "REST APIs must be hypertext driven by Roy Fielding". Roy.gbiv.com. 2008-10-20. Retrieved 2013-02-07.
+	\end{itemize}
+
+	
+\end{document}          
