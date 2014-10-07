@@ -75,13 +75,47 @@ Tal como se muestra en la Figura 1. El esquema de la tarjeta esta dividido en do
 	\item Chip Mifare.
 \end{itemize}
 
+La funcionalidad de esta tarjeta varia en funcionalidad, como ser para autentificaci\'on, y monetizaci\'on. En la actualidad varias ciudades emplean de diferentes formas el uso de los dispositivos de identificicaci\'on, como venta de pasajes para autobuses, identificacion en tarjetas de credito, credenciales medicas. inventarios de productos y ganado. 
+
+
 \section{Aporte tecnol\'ogico}
 
-La implementaci\'on de hardware libres como Arduino impulsara la adopci\'on de los dispositivos electr\'onicos en otras \'areas gracias a la gran variedad de m\'odulos que cuenta y tambi\'en tecnolog\'ias como los servicios web que descentralizaran la informaci\'on y el monitoreo en tiempo real,permitiendo a diferentes dispositivos tener informaci\'on de manera inmediata mediante   celulares, tablets, paginas web.\\
+La implementaci\'on de hardware libres como Arduino impulsara la adopci\'on de los dispositivos electr\'onicos en otras \'areas gracias a la gran variedad de m\'odulos que cuenta y tambi\'en tecnolog\'ias como los servicios web que descentralizaran la informaci\'on y el monitoreo en tiempo real, permitiendo a diferentes dispositivos tener informaci\'on de manera inmediata mediante celulares, tablets, paginas web.\\
+
+
+
+Para ello tenemos los proyectos Centinela y  ..  tiene pensado facilitar tanto las transacciones de dinero como autentificacion de persona.
+
+\section{Proyecto Centinela}
+
+Centinela, Control y seguimiento de actividades de acceso para la identificaci\'on de personal. Basado en tecnolog\'ias  open source. Dicho sistema  proveera el acceso a ambientes controlados mediante RFID, los datos ser\'an mandados mediante un servicio web para su procesamiento en un servidor. Figura 2.\\
+
+Los datos obtenidos se utilizaran para realizar reportes de seguimiento a los usuarios registrados. Los dispositivos de recolecci\'on estan basados en dise\~no construidos con arduino, compatibles con dispositivos m\'oviles que tengan NFC y lectores de alta frecuencia (UHF).\\
+
+Cabe resaltar que cada uno de estos dispositivos de trabaja de manejar distinta y su uso variar de acuerdo al usuario.\\
+
+\begin{figure}[!h]
+  \begin{center}
+    \includegraphics[width=2in]{architect.png}
+  \end{center}
+
+  \caption{\small Modelo de implementacion para el Proyecto Centinela.}
+  \label{fig-label}
+\end{figure}
+
+\section{Proyecto Colectivo Virtual}
+
+Orientado al registro y seguimiento de cr\'edito asignado a un dispositivo RFID, con la funcionalidad Wallet de las tarjetas Mifare S50. Con esto se tendra un registro del cambio de cantidad asignado a una identificaci\'on para que pueda ser utilizando en forma de pago o cambio, por ejemplo en un auto bus, pagar los pasajes con una identificaci\'on RFID, recargar cr\'editos en un vale de descuento, Monedero virtual y demas usos que tengar que ver con cambios de estado para un incremento y decremento.\\
+
+Un dispositivo de control realizara la transacci\'on y guardara los cambios en el dispositivo de manera rapida. la recargar se hara mediante  otro dispositivo que guardara los datos de usuarios y la cantidad del incremento o decremento.
+
+
 
 \section{Modelo de trabajo}  
 
-El m\'etodo de desarrollo comprende tres \'areas espec\'ificas que dar\'an como resultado las diferentes versiones tanto del software como de los componentes el\'ectricos  que intervienen, para elaborara un modelo de implementacion Figura 2. en un ambiente de trabajo.\\
+Independientemente del proyecto, un sistema de autentificacion es necesario para administrar y gestionar la informacion de los usuarios y los dispositivos de control.
+
+El m\'etodo de desarrollo comprende tres \'areas  que dar\'an como resultado a un sistema de autentificaci\'on  para los diferentes  proyecto citados.\\
 
 	\subsection{ Sistema web }
 	
@@ -104,17 +138,8 @@ El m\'etodo de desarrollo comprende tres \'areas espec\'ificas que dar\'an como 
 	 \begin{description}
 		 \item[Comunicaci\'on con sistema web] Interfaz de acceso al sistema web mediante una conexi\'on Ethernet.
 		 \item[Verificaci\'on de identidad] Control de acceso mediante RFID.
-		 \item[Interaccion con usuario] Estado de verificaci\'on mediante componentes electr\'onicos. 		
+		 \item[Interaccion con usuario] Estado de verificaci\'on mediante componentes electr\'onicos.
 	 \end{description}			
-
-\begin{figure}[!h]
-  \begin{center}
-    \includegraphics[width=2in]{architect.png}
-  \end{center}
-
-  \caption{\small Modelo de implementacion para otros dispositivos de identificacion.}
-  \label{fig-label}
-\end{figure}
 
 \section{Desarrollo}
 
@@ -168,7 +193,5 @@ Aclarar que este tipo de sistema esta dispuesto de forma general y planeado para
 		
 		\item "REST APIs must be hypertext driven by Roy Fielding". Roy.gbiv.com. 2008-10-20. Retrieved 2013-02-07.
 	\end{itemize}
-	
-	
 	
 \end{document}          
