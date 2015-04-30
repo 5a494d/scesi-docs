@@ -1,0 +1,239 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{enumerate}
+\usepackage[spanish]{babel} 
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{geometry}
+\geometry{
+ letterpaper,
+ left=30mm,
+ right=30mm,
+ top=30mm,
+ bottom=30mm,
+ }
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+		\vspace*{-1in}
+		\begin{center}
+			\begin{tabular}{lcr}
+				\includegraphics[scale=0.1]{./pictures/logo-umss.jpg} &
+				UNIVERSIDAD MAYOR DE SAN SIMON	  & 
+				\includegraphics[scale=0.1]{./pictures/logo-fcyt.jpg} \\
+				& FACULTAD DE CIENCIA Y TECNOLOGIA &  \\ 
+			\end{tabular}
+		\end{center}
+	\vspace*{1.6in}
+		\begin{large}
+			INFORME:\\
+		\end{large}
+		\vspace*{0.2in}
+		\begin{LARGE}
+			\textbf{METODO DE BUSQUEDA POR AMPLITUD} \\
+		\end{LARGE}
+		\vspace*{2in}
+		\begin{large}
+			\begin{tabular}{rl}
+				Estudiante : & Jorge Rubens Lipa Challapa (INFORMATICA) \\
+				 & Camacho Vasquez Ketty Vanesa(SISTEMAS) \\ 
+				 & Ferrufino Arispe Jhenny (SISTEMAS) \\ 
+				 & Sofia Gladys Calani Laura  (SISTEMAS) \\ 
+				Docente : & Garcia Perez Carmen Rosa \\ 
+				Materia : & Inteligencia Artificial \\
+				Fecha Entrega : & 20 de Octubre de 2014\\
+			\end{tabular}
+		\end{large}
+		\vspace*{.5in}\\
+		Cochabamba - Bolivia		
+	\end{center}
+	\end{titlepage}	
+
+\pagebreak
+\tableofcontents
+\pagebreak
+
+	\section{Fundamento Te\'orico}
+
+	\begin{description}
+		\item[B\'usquedas no informadas \begin{small} (a ciegas) \end{small}] EL t\'ermino significa que ellas no tienen informaci\'on adicional acerca de los estados m\'as all\'a de la proporciona la definici\'on del problema. Todo lo que aquellas pueden hacer generar los sucesores y distinguir entre un estado objetivo de uno que no lo es.
+		
+		\item[Tipos de b\'usqueda ciega] En la Figura \ref{tipo:busqueda}, vemos los tipos de b\'usquedas ciegas.
+
+  	\begin{figure}[!hbt]
+  		\centering
+  	  	\includegraphics[scale=.7]{./pictures/tipos-busqueda.png}
+	  	\caption{Tipos  de b\'usquedas no informadas. }
+	  	\label{tipo:busqueda}
+		\end{figure}
+		
+	\end{description}
+
+	\subsection{Definici\'on}
+		
+		\begin{description}
+			\item[B\'usqueda en amplitud o anchura.] Es un algoritmo basado en la estructura FIFO \begin{small} (First In First Out)	\end{small} que busca recorrer los nodos de un grafo \begin{small} (mayormente usado en arboles) \end{small} en orden creciente o por niveles, es decir, al localizar un nodo, este es asignado como ra\'iz, y se exploran todos los vecinos de este nodo. Al cumplir con esto uno de los nodos visitados se asigna como la nueva ra\'iz seg\'un la posici\'on que est\'a en la cola. \\
+			\\
+			A continuaci\'on para cada uno de los vecinos se exploran sus respectivos vecinos adyacentes, y as\'i hasta que se recorra todo el \'arbol.\\
+			\\
+			La estrategia que usaremos para garantizar este recorrido es utilizar una cola que nos permita almacenar temporalmente todos los nodos de un nivel, para ser procesados antes de pasar el siguiente nivel hasta que la cola est\'e vac\'ia.\\
+			\\
+			
+	\end{description}
+
+  	\begin{figure}[!hbt]
+  		\centering
+  	  	\includegraphics[scale=.7]{./pictures/busqueda-recorrido.png}
+	  	\caption{Recorrido de un grafo utilizando la b\'usqueda por amplitud}
+	  	\label{tipo:busqueda}
+		\end{figure}
+	
+	
+	\subsection{Algoritmo de Amplitud }
+	
+  	\begin{figure}[!hbt]
+  		\centering
+  	  	\includegraphics[scale=.9]{./pictures/algoritmo.png}
+		\end{figure}
+
+	
+
+	\subsection{ Ventajas y desventajas }	
+	
+	\begin{description}
+		\item[Ventajas] Si el problema tiene soluci\'on este procedimiento garantiza el encontrarla. Si hubiera varias soluciones se obtiene la de menor coste \textit{(la \'optima )}, es decir, la qie requiere un menor n\'umero de pasos \textit{ (si consideremos un coste uniforme de aplicaci\'on de los operadores)}.
+		
+		\item[Desventajas] Si el nivel de profundidad asociado a la soluci\'on es significante menor que el factor de ramificaci\'on se expandir\'ian demasiados nodos in\'utilmente. Por otro lado la principal desventaja de este m\'etodo es el espacio de almacenamiento requerido. Esto lo hace pr\'acticamente invisible para problemas complejos, como suelen ser los del mundo real.\\		
+
+\end{description}		
+
+		Consumo de memoria de b\'usqueda de amplitud\\
+
+		\begin{table}[!hbt]
+		 	\begin{center}
+			 \begin{tabular}{|cccc|} \hline
+			  Profundidad & Nodos & Tiempo & Memoria \\ \hline
+			  0  & 1 & 1 milisegundo &  100 bytes \\
+			  2  & 111 & .1 segundos & 11 kilobytes \\
+			  4  &11,111& 11 segundos & 1 megabytes \\
+			  6  & $10^6$ & 18 segundos & gigabytes \\
+			  8  & $10^8$ & 31 horas & 11 gigabytes \\
+			  10 & $10^10$ & 128 dias & 1 terabyte \\
+			  12 & $10^12$ & 35 a\~nos &  111 terabytes \\
+			  14 & $10^14$ & 3500 a\~nos & 11.111 terabytes \\ \hline
+			 \end{tabular}
+			\end{center}
+			\caption{Tiempo y memoria necesarios en la b\'usqueda preferente por amplitud. Las cifras indicadas suponen que hay un factor de ramificaci\'on $b=10$; nodos/segundo: 100 bytes/nodo.}
+		\end{table}
+	
+	\section{Aplicaci\'on del algoritmo sobre grafos}	
+	\begin{description}
+		\item \textit{Comprobar si un grafo es bipartito:} Un grafo no dirigido $G=(V,A)$ es bipartito su sus v\'ertices se pueden separar en dos conjuntos disjuntos $V_1$ y $ V_2$ de tal forma que $V = V_1 \cup V_2 , V_1\cap V_2 = \emptyset$ de tal forma que todas las artistas  de $G$ unen v\'ertices de un conjunto con v\'ertices de otros.
+		
+		\item \textit{Detecci\'on de las componentes fuertemente conexas de un grafo:} Una componente fuertemente conexa de un grafo $G=(V,A)$ es elm\'aximo conjunto de v\'ertices $U \subseteq V$ tal que para cada par de v\'ertices $u,v \in U $ existen caminos en $G$ desde $u$ hasta $v$ y viceversa. 
+		
+		\item \textit{Algoritmo de relleno o floodfill:} Determina el área formada por elementos contiguos en una matriz multidimensional. Se usa en la herramienta Bote de pintura de programas de dibujo para determinar qué partes de un mapa de bits se van a rellenar de un color (o una textura), y en juegos como el Buscaminas, Puyo Puyo, Lumines y Magical Drop para determinar qué piezas pueden retirarse o seleccionarse. El recorrido se lo realiza por capas para ver el alcance del objeto a recorrer.
+	\end{description}
+			
+	\subsection{Propiedades del algoritmo}
+	
+	\begin{enumerate}
+		\item \textit{Completo: } Un algoritmo se dice que es completo si se encuentra una soluci\'on.
+		\item \textit{Admisible: } Si se Garantiza regresar una soluci\'on \'optima cuando \'esta existe.
+		
+		\item \textit{\'Optimo: } Si hay varias soluciones, encuentra la mas superficial, la mejor si el costo es proporcional a la profundidad.
+		
+		\item \textit{Complejidad temporal: } Cantidad de tiempo necesario para encontrar la soluci\'on.\\ C\'uanto tiempo se necesita para encontrar la soluci\'on?
+\\ R. Es proporcional a los nodos generados.
+		
+		\begin{displaymath}
+			1 + b^2 + b^3 + \ldots + b^d = \frac{c^{d+1}-1}{b-1} \approx \frac{b^{d+1}}{b-1}
+		\end{displaymath}
+		
+  	\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.9]{./pictures/figura-piramidal.png}
+	  	\caption{Complejidad temporal donde tiempo donde el resultado llega a ser: $O\left(b^d\right)$}
+  		\label{fig:grafo-tres}
+		\end{figure}
+
+		\item \textit{Complejidad Espacial} Cantidad de memoria para encontrar la soluci\'on.\\
+		
+		Cuanta memoria se necesita para efectuar la b\'usqueda?\\
+		R. $O\left(b^d\right)$. hay que guardar todos los nodos en la memoria.
+	\end{enumerate}
+	
+	\pagebreak
+	\section{Demostraci\'on}
+		\subsection{Implementaci\'on del algoritmo}
+		
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.4]{./pictures/grafo-explicado-uno.png}
+	  	\caption{Recorrido inicial del grafo}
+  		\label{fig:grafo-uno}
+		\end{figure}
+		
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.4]{./pictures/grafo-explicado-dos.png}
+	  	\caption{Recorrido de nodos por capas}
+  		\label{fig:grafo-dos}
+		\end{figure}
+		
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.4]{./pictures/grafo-explicado-tres.png}
+	  	\caption{Recorrido final de grafo}
+  		\label{fig:grafo-tres}
+		\end{figure}
+		
+		\subsection{Ejemplo - Familia Simpson}
+		
+		Se determinara, una lista de prioridades en donde se sabr\'a quienes va a ser los beneficiados en el caso de que si algunos de sus integrantes se murieran entonces el testamento de la familia se modificar\'ia de acuerdo al grafo de la Figura \ref{fig:grafo-sim-uno}.
+		
+  	\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.8]{./pictures/sim-grafo.png}
+	  	\caption{\'Arbol de la familia simpson, ordenada por familia, padres, hijos}
+  		\label{fig:grafo-sim-uno}
+		\end{figure}
+		
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.8]{./pictures/sim-uno.png}
+	  	\caption{El recorrido se lo hara de izquierda a derecha}
+  		\label{fig:grafo-sim-dos}
+		\end{figure}
+		
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.8]{./pictures/sim-dos.png}
+	  	\caption{Se avanzan por niveles de acuerdo al algoritmo de b\'usqueda}
+  		\label{fig:grafo-sim-tres}
+		\end{figure}
+
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.8]{./pictures/sim-tres.png}
+	  	\caption{Cada vez que se revisa un v\'ertice, se guardan en memoria los subv\'ertices}
+  		\label{fig:grafo-sim-cuatro}
+		\end{figure}
+		
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.8]{./pictures/sim-cuatro.png}
+	  	\caption{Los datos le\'idos se los almacena en una cola}
+  		\label{fig:grafo-sim-cinco}
+		\end{figure}
+		
+		\begin{figure}[!h]
+  		\centering
+  	  	\includegraphics[scale=.8]{./pictures/sim-cinco.png}
+	  	\caption{La lista de beneficiaris a sido completada.}
+  		\label{fig:grafo-sim-cinco}
+		\end{figure}
+
+\end{document}
